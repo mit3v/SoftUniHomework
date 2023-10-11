@@ -1,0 +1,32 @@
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+ul {
+    list-style: square;
+}
+ol {
+    list-style: lower-greek;
+}
+li {
+    margin-bottom: 10px;
+}
+
+.site-content-sydyrjanie {
+    width: 400px;
+    margin: auto;
+}
+
+li:hover {
+    visibility: hidden;
+}
+
+#best-movie {
+    color: gold;
+}
+
+a {
+    display: block;
+    background-color: aqua;
+}
