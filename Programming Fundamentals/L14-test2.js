@@ -1,4 +1,4 @@
-let x = 10;
+let x = 5;
 
 function countdown() {
     console.log(x);
@@ -9,4 +9,6 @@ function countdown() {
     }
 }
 
-countdown();
+let result = countdown();
+
+console.log(result);
