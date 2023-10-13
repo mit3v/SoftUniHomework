@@ -2,10 +2,10 @@ function solve(numA, numB, name, age) {
     let addTwoNumbers = function(a, b) {
         console.log(a + b);
     }
-    let result = addTwoNumbers(numA, numB);
-    console.log(result);
+    console.log(addTwoNumbers);
+    addTwoNumbers(numA, numB);
 
-    let textForPrint = `${name} -> ${age + result}`;
+    let textForPrint = `${name} -> ${age}`;
     console.log(textForPrint);
 
 }
