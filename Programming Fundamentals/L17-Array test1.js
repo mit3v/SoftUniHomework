@@ -216,11 +216,21 @@
 // solve();
 
 
-function solve() {
-    let arr = ["aas", "ac", "Aaw"];
+// function solve() {
+//     let arr = ["aas", "ac", "Aaw"];
 
-    // arr.sort((a, b) => a.localeCompare(b)); // ['aas', 'Aaw', 'ac'];
-    arr.sort(); // ['Aaw', 'aas', 'ac'];
+//     // arr.sort((a, b) => a.localeCompare(b)); // ['aas', 'Aaw', 'ac'];
+//     arr.sort(); // ['Aaw', 'aas', 'ac'];
+//     console.log(arr);
+//     arr.sort((a,b) => a.localeCompare)
+// }
+// solve();
+
+
+function solve() {
+
+    let arr = [1, 3, 7, 4, 1, 8, 9];
+    arr = arr.filter(a => a != 1);
     console.log(arr);
 }
 solve();
