@@ -101,9 +101,126 @@
 // solveThis();
 
 
-function solveThis() {
-    let arr = [5, 6, 7, 8, 9, 10];
-    console.log(arr.splice(2, 0, 30, 40, 50));
+// function solveThis() {
+//     let arr = [5, 6, 7, 8, 9, 10];
+//     console.log(arr.splice(2, 0, 30, 40, 50));
+//     console.log(arr);
+// }
+// solveThis();
+
+
+// function solveThis() {
+//     let arr = ["1", "2", "3", "4", "5"];
+//     // for (i = 0; i < arr.length; i++) {
+//     //     arr[i] = Number(arr[i]);
+//     // }
+//     // arr.map((a) => console.log(a));
+
+
+//     // let arrNumber = arr.map((a) => Number(a));
+//     // console.log(arr);
+//     // console.log(arrNumber);
+
+
+
+//     let arrNumber = arr.map((a) => Number(a) + 1);
+//     console.log(arrNumber);
+// }
+
+// solveThis();
+
+
+// function solveThis() {
+//     let arr = ["Gosho", "Tosho", "Pesho"];
+//     // let newArr = arr.map((a) => a + 1);
+//     let newArr = arr.map(function(a) {
+//         return "new" + a;});
+//     console.log(newArr);
+// }
+// solveThis();
+
+// function solveThis() {
+//     let arr = ["Gosho", "Tosho", "Pesho"];
+//     let newArr = arr.map(function (a, i, self) {
+//         console.log(self);
+//         return "new " + a;
+//     });
+//     console.log(newArr);
+// }
+// solveThis();
+
+// function solveThis() {
+//     let arr = ["1", "2", "3", "4", "5"];
+//     let newArr = arr.map(Number);
+//     console.log(newArr);
+// }
+// solveThis();
+
+// function solve() {
+
+//     let arr = ["one", "two", "three", "four", "five"];
+//     let arrLengths = arr.map(a => a.length);
+//     console.log(arrLengths);
+// }
+// solve();
+
+
+// function solve() {
+//     let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+
+//     let newArr = arr.filter(a => a > 4);
+//     console.log(arr);
+//     console.log(newArr);
+
+// }
+// solve();
+
+
+// function solve() {
+//     let arr = ["aa","aaa", "aaaaa", "aaaaaaaaaaa"];
+//     let newArr = arr.filter(a => a.length > 4);
+//     console.log(arr);
+//     console.log(newArr.reverse());
+
+// }
+// solve();
+
+
+// function solve() {
+//     let arr = [1, 5, 7, 3, 8, 10, 20, 30];
+
+//     console.log(arr.sort((a, b) => b - a));
+// }
+// solve();
+
+
+
+// function solve() {
+//     let arr = ["Gosho", "Pesho", "Stamat"];
+
+//     arr.sort((a, b) => a.localeCompare(b));
+//     console.log(arr);
+
+//     arr.sort((a, b) => b.localeCompare(a));
+//     console.log(arr);
+// }
+// solve();
+
+
+// function solve() {
+//     let arr = ["aw", "aas", "ac"];
+
+//     arr.sort((a, b) => a.localeCompare(b));
+//     console.log(arr);
+// }
+// solve();
+
+
+function solve() {
+    let arr = ["aas", "ac", "Aaw"];
+
+    // arr.sort((a, b) => a.localeCompare(b)); // ['aas', 'Aaw', 'ac'];
+    arr.sort(); // ['Aaw', 'aas', 'ac'];
     console.log(arr);
 }
-solveThis();
+solve();
