@@ -162,16 +162,32 @@
 
 
 
-function solve(firstName, lastName, age) {
-    let result = {
-        firstName,
-        lastName,
-        age,
-    }
-    for (let key of Object.keys(result)) {
-        console.log(key);
-        console.log(result[key]);
-        console.log(`${key} -> ${result[key]}`);
-    }
+// function solve(firstName, lastName, age) {
+//     let result = {
+//         firstName,
+//         lastName,
+//         age,
+//     }
+//     for (let key of Object.keys(result)) {
+//         console.log(key);
+//         console.log(result[key]);
+//         console.log(`${key} -> ${result[key]}`);
+//     }
+// }
+// solve("George", "Smith", "18"); 
+
+
+
+function solve() {
+    let name = "Tosho";
+    let name1 = name;
+    name = "Pesho";
+    let arr = [1, 2, 3];
+    let arr1 = arr;
+    arr.push(4);
+    console.log(name);
+    console.log(name1);
+    console.log(arr);
+    console.log(arr1);
 }
-solve("George", "Smith", "18"); 
+solve();
