@@ -1,0 +1,8 @@
+function city(obj) {
+    for (keykey of Object.keys(obj)) {
+        console.log(`${keykey} -> ${obj[keykey]}`);  //Тук изглежда че се опитвате да достъпите свойство на обект (obj.keykey), което обаче няма да работи, защото obj.keykey ще опита да намери ключ с име "keykey" в обекта, което не е желаното поведение.
+    }
+
+}
+city({ name: "Sofia", area: 492,population: 1238438, country: "Bulgaria", postCode: "1000" });
+city({ name: "Plovdiv", area: 389, population: 1162358, country: "Bulgaria", postCode: "4000" });
