@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM Demo</h1>
+    <button onclick="console.log('hello'); console.log('hi again')">Click Me!</button>
+    <button onclick="hello()">Click Me function</button>
+    <button onclick="helloAll()">Click Me function</button>
+    <button onclick="add(3, 5)">Sum</button>
+    <button onclick="fromAnotherFile()">From another app</button>
+    <ul>
+        <li>DOM Properties</li>
+        <li>DOM Methods</li>
+        <li>DOM Events</li>
+    </ul>
+    <script>
+        console.log('from inline script');
+    </script>
+    <script>
+        function hello() {
+            console.log('hello from function inline script');
+        }
+    </script>
+    <script>
+        function helloAll() {
+            alert('hello from function inline script');
+        }
+        function add(a, b) {
+            alert(a + b);
+        }
+    </script>
+   <script src="./L9app.js"></script>
+</body>
+</html>

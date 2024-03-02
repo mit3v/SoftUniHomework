@@ -25,4 +25,14 @@ console.log(arr1.every(e => e % 2 == 0));
 
 console.log(arr1.filter(e => e % 2 == 0));
 
+let arr3 = [3, 4, 5, 6];
+let reducer1 = (accumulator1, currentValue) => accumulator1 + currentValue;
+console.log(arr3.reduce(reducer1));
+console.log(arr3.reduce(reducer1, 10));
+let reducedArr3 = arr3.reduce((a, current) => a + current);
+console.log(reducedArr3);
+
+let arr5 = [[1, 2], [7, 8], [10, 11]];
+let arr6 = arr5.flat();
+console.log(arr6);
 

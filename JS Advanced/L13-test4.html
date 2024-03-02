@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click Me</button>
+    <script>
+        const obj = {
+            name: "Peter",
+            respond() {
+                alert(`${this.name} says hello!`);
+            }
+        }
+
+        const respond2 = obj.respond.bind(obj);
+        console.log(typeof(respond2)); // function
+        const respond3 = obj.respond.bind({name: "Stamat"});
+        document.getElementById("btn").addEventListener("click", respond2);
+        document.getElementById("btn").addEventListener("click", respond3);
+        document.getElementById("btn").addEventListener("click", obj.respond);
+        document.getElementById("btn").addEventListener("click", obj.respond.);
+    </script>
+    
+</body>
+</html>

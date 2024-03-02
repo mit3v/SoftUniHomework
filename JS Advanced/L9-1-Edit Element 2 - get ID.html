@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            color:red;
+        }
+    </style>
+    <style>
+        #title1 {
+            color: blue;
+       }
+    </style>
+    <style>
+        .row.first {
+            color: green;
+        }
+    </style>
+    <style>
+        .row .first {
+            color: purple;
+        }
+    </style>
+    <style>
+        [name="email1"] {
+            color: blue;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title1">DOM Demo</h1>
+    <button onclick="changeColor()">Click me!</button>
+    <button>Count</button>
+    <ul>
+        <li class="row">DOM Properties</li>
+        <li class="row">DOM Methods</li>
+        <li class="row first">DOM Methods</li>
+        <li class="row first"><span class="first">nested element with class first</span>Element</li>
+        <li class="row another">DOM Events</li>
+        <li class="bla">Testing something</li>
+        <li class="bla">Testing something</li>
+    </ul>
+    <input type="text" name="color" placeholder="Color">
+    <input type="text" name = "name1">
+    <input type="text" name = "email1">
+    <input type="checkbox" name="consent"> I agree to the Trems and Conditions
+    <script>
+        function edit(element, match, replacer) {
+            let content = element.textContent;
+            element.textContent = content.split(match).join(replacer);
+        }
+        function changeColor() {
+            const input = document.querySelector('[name="color"]');
+            const color = input.value;
+            const h1 = document.getElementById("title1");
+            h1.style.color = color;
+            
+            // const h1 = document.getElementById("title1");
+            // h1.style.color = "red";  // тези два реда са ако искаме заглавието да е червено;
+        }
+    </script>
+    <input type="number" id="field">
+</body>
+</html>
